@@ -39,7 +39,7 @@ public class EmployeeController {
 
 	@PutMapping
 	public void updateEmployee(@RequestBody @Valid Employee employee) throws EmployeeNotFoundException {
-		LOGGER.info("Start+Lund");
+		LOGGER.info("Start");
 		employeeService.updateEmployee(employee);
 		LOGGER.info("End");
 	}
